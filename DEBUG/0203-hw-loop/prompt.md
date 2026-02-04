@@ -54,3 +54,26 @@ inav configurator --- localhost:5761 <==> usb_serial --- inav
 ---
 
 当前目录是开源飞控inav的固件仓库。请检查其中crsf包裹msp报文通过串口发送的隧道链路，当msp报文比较长（包括头尾和校验432字节时），隧道中传出的分包crsf报文是否有缺漏的可能。
+
+实际的观察是，长度为432的MSP2_INAV_SERVO_MIXER响应报文是如下所示，并没有完整发送。请继续检查原因
+
+```
+[10:59:02] ADDR:0xC8 MSP_RESP (Len:62) CRC:OK
+  MSP Info: Org:0xEC Dst:0xC8 Seq:5 START Ver:2 MSPv2 Cmd:MSP2_INAV_SERVO_MIXER(0x2020) Sz:432
+  HEX: EC C8 55 00 20 20 B0 01 01 00 32 00 00 FF 01 01 32 00 00 FF 02 00 CE FF 00 FF 02 01 32 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00
+[10:59:02] ADDR:0xC8 MSP_RESP (Len:62) CRC:OK
+  MSP Info: Org:0xEC Dst:0xC8 Seq:6 Ver:2 
+  HEX: EC C8 46 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00
+[10:59:02] ADDR:0xC8 MSP_RESP (Len:62) CRC:OK
+  MSP Info: Org:0xEC Dst:0xC8 Seq:7 Ver:2 
+  HEX: EC C8 47 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00 00 FF 00 00 00 00
+[10:59:02] ADDR:0xC8 MSP_RESP (Len:15) CRC:OK
+  MSP Info: Org:0xEC Dst:0xC8 Seq:8 Ver:2 
+  HEX: EC C8 48 00 FF 00 00 00 00 00 FF 00 00
+```
+
+上面的日志来自 DEBUG/0203-hw-loop/crsf_monitor.py 抓包脚本（其中串口rx直接接在crsf串口上，监听inav发送报文）。不排除脚本写错的可能性，请修改脚本提升其输出的详细程度和可读性，用于排查当前分包丢失的问题。
+
+当前目录是开源飞控inav的固件仓库。请检查其中crsf包裹msp报文通过串口发送的隧道链路，当msp报文比较长（包括头尾和校验432字节时），隧道中传出的分包crsf报文是否有缺漏的可能。请参考 `DEBUG/0203-hw-loop/crsf.log` 的日志（来自 DEBUG/0203-hw-loop/crsf_monitor.py 抓包脚本，其中串口rx直接接在crsf串口上，监听inav发送报文）
+
+我们不考虑capture loss，因为捕捉到分包丢帧的现象是可复现的。

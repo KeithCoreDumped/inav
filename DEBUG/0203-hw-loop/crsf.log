@@ -1,0 +1,255 @@
+Loaded 253 MSP commands from /Users/kcd/WorkLoad/Flight/inav
+Listening on /dev/cu.usbmodem11202 at 420000 baud...
+Filtering out: FLIGHT_MODE, VARIO, BATTERY, BARO_ALT, LINK_STATS, RC_CHANNELS, ATTITUDE
+[35m[11:23:27.169] idx=299 off=2579 dir=RX(0xEC)->FC(0xC8) raw=15 crsf_len=13 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=11 msp=START v=2 seq=3 status=0x53 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_API_VERSION decl=3 frag=3 cum=3 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(11): EC  C8  53  00  01  00  03  00  00  02  05
+[35m[11:23:27.272] idx=301 off=2606 dir=RX(0xEC)->FC(0xC8) raw=16 crsf_len=14 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=12 msp=START v=2 seq=4 status=0x54 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_FC_VARIANT decl=4 frag=4 cum=4 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(12): EC  C8  54  00  02  00  04  00  49  4E  41  56
+[35m[11:23:27.272] idx=303 off=2631 dir=RX(0xEC)->FC(0xC8) raw=15 crsf_len=13 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=11 msp=START v=2 seq=5 status=0x55 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_FC_VERSION decl=3 frag=3 cum=3 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(11): EC  C8  55  00  03  00  03  00  09  00  00
+[35m[11:23:27.272] idx=305 off=2652 dir=RX(0xEC)->FC(0xC8) raw=12 crsf_len=10 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=8 msp=START v=2 seq=6 status=0x56 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_NAME decl=0 frag=0 cum=0 exp_frags=0 DONE[0m
+  HEX_PAYLOAD(8): EC  C8  56  00  0A  00  00  00
+[35m[11:23:27.272] idx=307 off=2670 dir=RX(0xEC)->FC(0xC8) raw=39 crsf_len=37 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=35 msp=START v=2 seq=7 status=0x57 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_BUILD_INFO decl=27 frag=27 cum=27 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(35): EC  C8  57  00  05  00  1B  00  46  65  62  20  20  33  20  32  30  32  36  31  39  3A  31  33  3A  34  35  62  36  64  38  37  30  64  30
+[35m[11:23:27.374] idx=309 off=2719 dir=RX(0xEC)->FC(0xC8) raw=41 crsf_len=39 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=37 msp=START v=2 seq=8 status=0x58 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_BOARD_INFO decl=29 frag=29 cum=29 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(37): EC  C8  58  00  04  00  1D  00  4E  52  46  57  00  00  02  00  14  4E  45  55  54  52  4F  4E  52  43  46  34  33  35  4D  49  4E  49  5F  46  57
+[35m[11:23:27.374] idx=311 off=2772 dir=RX(0xEC)->FC(0xC8) raw=24 crsf_len=22 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=20 msp=START v=2 seq=9 status=0x59 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_UID decl=12 frag=12 cum=12 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(20): EC  C8  59  00  A0  00  0C  00  06  2B  99  10  00  C0  D5  0D  01  17  D1  0D
+[35m[11:23:27.479] idx=314 off=2811 dir=RX(0xEC)->FC(0xC8) raw=43 crsf_len=41 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=39 msp=START v=2 seq=10 status=0x5A flags=0x00 org=0xEC dst=0xC8 cmd=MSP_BOXIDS decl=31 frag=31 cum=31 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(39): EC  C8  5A  00  77  00  1F  00  00  33  3D  01  02  23  05  08  03  0C  24  25  15  36  40  0D  3C  13  1B  27  28  29  2A  2B  2C  32  3E  3F  41  42  43
+[35m[11:23:27.479] idx=316 off=2860 dir=RX(0xEC)->FC(0xC8) raw=25 crsf_len=23 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=21 msp=START v=2 seq=11 status=0x5B flags=0x00 org=0xEC dst=0xC8 cmd=MSP_DATAFLASH_SUMMARY decl=13 frag=13 cum=13 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(21): EC  C8  5B  00  46  00  0D  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:27.479] idx=318 off=2895 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17 msp=START v=2 seq=12 status=0x5C flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_MIXER decl=9 frag=9 cum=9 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(17): EC  C8  5C  00  10  20  09  00  00  00  01  01  00  08  00  0C  12
+[35m[11:23:27.582] idx=320 off=2928 dir=RX(0xEC)->FC(0xC8) raw=12 crsf_len=10 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=8 msp=START v=2 seq=13 status=0x5D flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_COMMON_SETTING decl=0 frag=0 cum=0 exp_frags=0 DONE[0m
+  HEX_PAYLOAD(8): EC  C8  5D  00  03  10  00  00
+[35m[11:23:27.582] idx=323 off=2955 dir=RX(0xEC)->FC(0xC8) raw=16 crsf_len=14 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=12 msp=START v=2 seq=14 status=0x5E flags=0x00 org=0xEC dst=0xC8 cmd=MSP_FEATURE decl=4 frag=4 cum=4 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(12): EC  C8  5E  00  24  00  04  00  04  04  40  00
+[35m[11:23:27.685] idx=325 off=2977 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17 msp=START v=2 seq=15 status=0x5F flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_MIXER decl=9 frag=9 cum=9 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(17): EC  C8  5F  00  10  20  09  00  00  00  01  01  00  08  00  0C  12
+[35m[11:23:27.685] idx=327 off=3008 dir=RX(0xEC)->FC(0xC8) raw=53 crsf_len=51 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=49 msp=START v=2 seq=0 status=0x50 flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_MISC decl=41 frag=41 cum=41 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(49): EC  C8  50  00  03  20  29  00  DC  05  00  00  D0  07  E8  03  E8  03  00  00  06  00  00  00  4C  04  00  00  A9  01  4A  01  A4  01  5E  01  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:27.685] idx=329 off=3073 dir=RX(0xEC)->FC(0xC8) raw=39 crsf_len=37 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=35 msp=START v=2 seq=1 status=0x51 flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_COMMON_SERIAL_CONFIG decl=27 frag=27 cum=27 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(35): EC  C8  51  00  09  10  1B  00  00  01  00  00  00  08  08  00  08  04  01  00  00  00  08  08  00  08  06  40  00  00  00  08  08  00  08
+[35m[11:23:27.889] idx=336 off=3164 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  52  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:27.890] idx=338 off=3191 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  53  00  00  20  16  00  FD  01  32  00  87  00  09  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:27.890] idx=340 off=3231 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  54  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:27.890] idx=342 off=3261 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  55  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:27.992] idx=344 off=3309 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  56  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:27.992] idx=346 off=3336 dir=RX(0xEC)->FC(0xC8) raw=16 crsf_len=14 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=12 msp=START v=2 seq=7 status=0x57 flags=0x00 org=0xEC dst=0xC8 cmd=MSP_FEATURE decl=4 frag=4 cum=4 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(12): EC  C8  57  00  24  00  04  00  04  04  40  00
+[35m[11:23:27.992] idx=348 off=3358 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17 msp=START v=2 seq=8 status=0x58 flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_MIXER decl=9 frag=9 cum=9 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(17): EC  C8  58  00  10  20  09  00  00  00  01  01  00  08  00  0C  12
+[35m[11:23:28.095] idx=350 off=3385 dir=RX(0xEC)->FC(0xC8) raw=53 crsf_len=51 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=49 msp=START v=2 seq=9 status=0x59 flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_MISC decl=41 frag=41 cum=41 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(49): EC  C8  59  00  03  20  29  00  DC  05  00  00  D0  07  E8  03  E8  03  00  00  06  00  00  00  4C  04  00  00  A9  01  4A  01  A4  01  5E  01  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:28.095] idx=352 off=3448 dir=RX(0xEC)->FC(0xC8) raw=39 crsf_len=37 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=35 msp=START v=2 seq=10 status=0x5A flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_COMMON_SERIAL_CONFIG decl=27 frag=27 cum=27 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(35): EC  C8  5A  00  09  10  1B  00  00  01  00  00  00  08  08  00  08  04  01  00  00  00  08  08  00  08  06  40  00  00  00  08  08  00  08
+[35m[11:23:28.198] idx=357 off=3520 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  5B  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:28.198] idx=359 off=3551 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  5C  00  00  20  16  00  36  03  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:28.303] idx=361 off=3597 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  5D  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:28.303] idx=363 off=3626 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5E  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:28.303] idx=365 off=3668 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5F  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.406] idx=368 off=3702 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  50  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.406] idx=370 off=3732 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  51  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:28.406] idx=372 off=3762 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  52  00  00  20  16  00  FB  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:28.406] idx=374 off=3802 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  53  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:28.509] idx=376 off=3828 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  54  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:28.509] idx=378 off=3874 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  55  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.509] idx=381 off=3913 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  56  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.612] idx=384 off=3943 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  57  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.612] idx=387 off=3983 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  58  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.715] idx=390 off=4016 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  59  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:28.716] idx=392 off=4043 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  5A  00  00  20  16  00  F9  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:28.716] idx=394 off=4087 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  5B  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:28.819] idx=396 off=4119 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5C  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:28.819] idx=398 off=4164 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5D  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.820] idx=400 off=4188 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5E  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.922] idx=403 off=4222 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5F  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:28.923] idx=406 off=4261 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  50  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.025] idx=409 off=4291 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  51  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:29.025] idx=411 off=4322 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  52  00  00  20  16  00  F6  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:29.025] idx=413 off=4368 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  53  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:29.129] idx=415 off=4397 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  54  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:29.129] idx=417 off=4439 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  55  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.129] idx=419 off=4463 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  56  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.234] idx=422 off=4503 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  57  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.234] idx=425 off=4536 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  58  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.336] idx=428 off=4570 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  59  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:29.336] idx=431 off=4612 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  5A  00  00  20  16  00  F9  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:29.336] idx=433 off=4652 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  5B  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:29.438] idx=435 off=4678 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5C  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:29.438] idx=437 off=4724 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5D  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.540] idx=440 off=4763 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5E  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.540] idx=443 off=4793 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5F  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.643] idx=446 off=4833 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  50  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:29.643] idx=448 off=4863 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  51  00  00  20  16  00  F7  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:29.643] idx=450 off=4903 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  52  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:29.643] idx=452 off=4929 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  53  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:29.745] idx=454 off=4975 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  54  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.745] idx=456 off=5005 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  55  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.745] idx=459 off=5038 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  56  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.847] idx=462 off=5072 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  57  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:29.847] idx=465 off=5111 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  58  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:29.949] idx=467 off=5138 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  59  00  00  20  16  00  FD  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:29.949] idx=469 off=5178 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  5A  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:29.949] idx=471 off=5208 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5B  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:30.053] idx=473 off=5256 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5C  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.053] idx=475 off=5283 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5D  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.053] idx=478 off=5313 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5E  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.156] idx=481 off=5353 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5F  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.156] idx=484 off=5386 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  50  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:30.259] idx=486 off=5413 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  51  00  00  20  16  00  F9  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:30.259] idx=488 off=5457 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  52  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:30.259] idx=490 off=5489 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  53  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:30.364] idx=492 off=5534 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  54  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.364] idx=494 off=5558 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  55  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.364] idx=497 off=5592 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  56  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.466] idx=500 off=5631 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  57  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.466] idx=503 off=5661 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  58  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:30.568] idx=505 off=5692 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  59  00  00  20  16  00  F9  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:30.569] idx=507 off=5738 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  5A  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:30.569] idx=509 off=5767 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5B  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:30.569] idx=511 off=5809 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5C  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.671] idx=513 off=5833 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5D  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.671] idx=516 off=5873 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5E  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.774] idx=519 off=5906 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5F  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.774] idx=522 off=5940 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  50  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:30.876] idx=524 off=5973 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  51  00  00  20  16  00  F9  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:30.876] idx=526 off=6016 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  52  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:30.877] idx=528 off=6042 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  53  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:30.981] idx=531 off=6094 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  54  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:30.981] idx=535 off=6139 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  55  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:31.084] idx=538 off=6173 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  56  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:31.084] idx=541 off=6212 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  57  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:31.084] idx=543 off=6239 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  58  00  00  20  16  00  F9  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:31.188] idx=545 off=6279 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  59  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:31.188] idx=547 off=6309 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5A  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:31.188] idx=549 off=6357 dir=RX(0xEC)->FC(0xC8) raw=18 crsf_len=16 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=14[0m
+  HEX_PAYLOAD(14): EC  C8  5B  00  6C  00  06  00  4B  03  CC  FF  AB  00
+[35m[11:23:31.290] idx=551 off=6384 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17 msp=START v=2 seq=12 status=0x5C flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_MIXER decl=9 frag=9 cum=9 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(17): EC  C8  5C  00  10  20  09  00  00  00  01  01  00  08  00  0C  12
+[35m[11:23:31.290] idx=553 off=6411 dir=RX(0xEC)->FC(0xC8) raw=28 crsf_len=26 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=24 msp=START v=2 seq=13 status=0x5D flags=0x00 org=0xEC dst=0xC8 cmd=MSP_MOTOR decl=16 frag=16 cum=16 exp_frags=1 DONE[0m
+  HEX_PAYLOAD(24): EC  C8  5D  00  68  00  10  00  E8  03  CD  FB  16  2E  55  D6  60  D3  04  35  40  82  BC  AA
+[35m[11:23:31.290] idx=555 off=6445 dir=RX(0xEC)->FC(0xC8) raw=64 crsf_len=62 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=60 msp=START v=2 seq=14 status=0x5E flags=0x00 org=0xEC dst=0xC8 cmd=MSP2_INAV_SERVO_MIXER decl=432 frag=52 cum=52 exp_frags=8[0m
+  HEX_PAYLOAD(60): EC  C8  5E  00  20  20  B0  01  01  00  32  00  00  FF  01  01  32  00  00  FF  02  00  CE  FF  00  FF  02  01  32  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00
+[35m[11:23:31.291] idx=556 off=6509 dir=RX(0xEC)->FC(0xC8) raw=64 crsf_len=62 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=60 msp=CONT v=2 seq=15 status=0x4F org=0xEC dst=0xC8 cmd=MSP2_INAV_SERVO_MIXER decl=432 frag=57 cum=109 exp_frags=8[0m
+  HEX_PAYLOAD(60): EC  C8  4F  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00  00  00  00  00  FF  00
+[35m[11:23:31.393] idx=557 off=6637 dir=RX(0xEC)->FC(0xC8) raw=17 crsf_len=15 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=13 msp=CONT v=2 seq=1 status=0x41 org=0xEC dst=0xC8 cmd=MSP2_INAV_SERVO_MIXER decl=432 frag=10 cum=119 exp_frags=8 gap=SEQ_GAP exp=0 got=1[0m
+  HEX_PAYLOAD(13): EC  C8  41  00  FF  00  00  00  00  00  FF  00  00
+[35m[11:23:32.417] idx=609 off=7094 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  52  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:32.417] idx=611 off=7127 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  53  00  00  20  16  00  FF  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:32.417] idx=613 off=7170 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  54  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:32.520] idx=615 off=7196 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  55  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:32.621] idx=621 off=7275 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  56  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:32.622] idx=623 off=7302 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  57  00  00  20  16  00  F7  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:32.622] idx=625 off=7346 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  58  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:32.725] idx=627 off=7378 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  59  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:32.931] idx=638 off=7500 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  5A  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:32.931] idx=640 off=7530 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  5B  00  00  20  16  00  FB  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:32.931] idx=642 off=7570 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  5C  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:33.036] idx=644 off=7596 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  5D  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+[35m[11:23:33.240] idx=655 off=7718 dir=RX(0xEC)->FC(0xC8) raw=21 crsf_len=19 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=17[0m
+  HEX_PAYLOAD(17): EC  C8  5E  00  97  00  09  00  01  01  01  01  01  00  00  00  00
+[35m[11:23:33.240] idx=657 off=7749 dir=RX(0xEC)->FC(0xC8) raw=34 crsf_len=32 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=30[0m
+  HEX_PAYLOAD(30): EC  C8  5F  00  00  20  16  00  FB  01  32  00  87  00  08  00  00  00  32  04  00  00  02  04  00  00  00  00  00  00
+[35m[11:23:33.240] idx=659 off=7795 dir=RX(0xEC)->FC(0xC8) raw=20 crsf_len=18 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=16[0m
+  HEX_PAYLOAD(16): EC  C8  50  00  71  00  08  00  00  02  04  00  00  00  00  00
+[35m[11:23:33.240] idx=661 off=7824 dir=RX(0xEC)->FC(0xC8) raw=36 crsf_len=34 type=MSP_RESP(0x7B) addr=FC(0xC8) crc=OK pl=32[0m
+  HEX_PAYLOAD(32): EC  C8  51  00  02  20  18  00  0C  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
