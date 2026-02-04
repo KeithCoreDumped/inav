@@ -94,6 +94,14 @@ inav configurator（tcp连接） --- `DEBUG/0203-hw-loop/tcp_to_crsf.py`的tcp�
 
 ---
 
+接下来请使用 arm-none-eabi-gdb 来调试这个问题，你可以自由添加断点，观察变量值，打印调用栈等。但先不要修改代码或重新烧录。关于openocd的使用，可以参考下面的指令。
+
+```sh
+/Users/kcd/Downloads/openocd/build/release/openocd -s /Users/kcd/Downloads/openocd/build/release/scripts -f "/Users/kcd/WorkLoad/Flight/inav/at32f435-daplink.cfg"
+```
+
+---
+
 你可以修改inav固件，编译并使用下面的指令烧录。
 
 ```sh
