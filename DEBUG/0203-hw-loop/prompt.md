@@ -77,3 +77,25 @@ inav configurator --- localhost:5761 <==> usb_serial --- inav
 当前目录是开源飞控inav的固件仓库。请检查其中crsf包裹msp报文通过串口发送的隧道链路，当msp报文比较长（包括头尾和校验432字节时），隧道中传出的分包crsf报文是否有缺漏的可能。请参考 `DEBUG/0203-hw-loop/crsf.log` 的日志（来自 DEBUG/0203-hw-loop/crsf_monitor.py 抓包脚本，其中串口rx直接接在crsf串口上，监听inav发送报文）
 
 我们不考虑capture loss，因为捕捉到分包丢帧的现象是可复现的。
+
+---
+
+当前目录是开源飞控inav的固件仓库，硬件/软件连接是：
+
+```
+inav configurator（tcp连接） --- `DEBUG/0203-hw-loop/tcp_to_crsf.py`的tcp到串口桥接器 --- inav 硬件的crsf串口
+```
+
+在 `DEBUG/0203-hw-loop/crsf-faulty.log` 是使用上述脚本记录的crsf报文。日志显示对于 configurator 发出的 `MSP2_INAV_SERVO_MIXER` 指令，inav只返回了部分报文（62+62+62+15=151字节，可能包含或不包含msp和crsf帧头信息），而不是 `DEBUG/0203-hw-loop/serial.log` 中显示的完整报文（432字节，纯msp v2 payload，不包含帧头和校验），导致inav configurator无法正常工作。
+
+由于难以直接使用 inav configurator，接下来请先用python脚本复现这个问题。请你编写脚本回放 crsf-faulty.log 中的完整报文到usb串口（只需要其中TCP->SER的指令部分），并观察inav的响应（SER->TCP）。你的工作不涉及到tcp连接相关，也不需要启动tcp_to_crsf.py，但你可以参考其中的解包和过滤逻辑（inav上电会不断往串口发送telemetry数据，可滤除以减少干扰）。
+
+请使用 /Users/kcd/miniforge3/bin/python
+
+---
+
+你可以修改inav固件，编译并使用下面的指令烧录。
+
+```sh
+/Users/kcd/Downloads/openocd/build/release/openocd -s /Users/kcd/Downloads/openocd/build/release/scripts -f "/Users/kcd/WorkLoad/Flight/inav/at32f435-daplink.cfg" -c "init;reset init" -c "program /Users/kcd/WorkLoad/Flight/inav/build/bin/NEUTRONRCF435MINI_FW.elf verify reset exit"
+```
