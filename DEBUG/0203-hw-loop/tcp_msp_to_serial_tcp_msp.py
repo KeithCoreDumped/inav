@@ -18,11 +18,11 @@ RED = "\033[31m"
 
 # Filter: ignore these MSP commands in output (still forwarded, just not logged)
 FILTERED_COMMANDS = {
-    "MSP_ATTITUDE",
-    "MSP_SENSOR_STATUS",
-    "MSP2_INAV_STATUS",
-    "MSP2_INAV_ANALOG",
-    "MSP_ACTIVEBOXES",
+    # "MSP_ATTITUDE",
+    # "MSP_SENSOR_STATUS",
+    # "MSP2_INAV_STATUS",
+    # "MSP2_INAV_ANALOG",
+    # "MSP_ACTIVEBOXES",
 }
 
 

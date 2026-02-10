@@ -11,7 +11,7 @@ from pathlib import Path
 # Configuration
 TCP_HOST = '0.0.0.0'
 TCP_PORT = 5761
-SERIAL_PORT = '/dev/cu.usbmodem11402'
+SERIAL_PORT = '/dev/cu.usbmodem1402'
 SERIAL_BAUDRATE = 420000  # Standard ELRS baud
 
 # Log filters (mirrors crsf_monitor.py) + JSONL file logging
