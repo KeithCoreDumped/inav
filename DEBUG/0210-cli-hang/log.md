@@ -1,0 +1,1 @@
+请检查 `DEBUG/0210-cli-hang/tcp_msp_to_serial_tcp_msp.py` 中是否有遗漏日志的问题，特别是当报文不符合msp协议时，是否打印了足够多的日志，以便于排查问题。
